@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using stocksTradePractice.Models;
+using stocksTradePractice.Services;
 using System.Data.Common;
 
 namespace stocksTradePractice
@@ -25,6 +26,8 @@ namespace stocksTradePractice
 			{
 				options.UseSqlServer(conString);
 			});
+
+			builder.Services.AddScoped<UserService>();
 
 			var app = builder.Build();
 
