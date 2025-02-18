@@ -6,7 +6,6 @@ namespace stocksTradePractice.Repositories
 	{
 		Task AddUserAsync(User user);
 		Task<User?> GetUserByUserNameAsync(string userName);
-
 		Task<User> GetUserById(int id);
 	}
 }

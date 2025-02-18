@@ -18,10 +18,10 @@ namespace stocksTradePractice.Controllers
     {
         private readonly UserServices _userServices;
 
-        //public UsersController(UserServices userServices)
-        //{
-
-        //}
+        public UsersController(UserServices userServices)
+        {
+            _userServices = userServices;
+        }
 
         // GET: api/Users
         //[HttpGet]

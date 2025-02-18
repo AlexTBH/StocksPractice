@@ -11,7 +11,7 @@ using stocksTradePractice.Models;
 namespace stocksTradePractice.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250209191945_InitialCreate")]
+    [Migration("20250218231832_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -32,7 +32,7 @@ namespace stocksTradePractice.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("HashedPassword")
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
